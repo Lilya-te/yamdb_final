@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: web:lastet
+    image: tereshchenkovali/yamdb_final:laste
     build: .
     restart: always
     volumes:
@@ -21,7 +21,7 @@ services:
       - ./.env
 
   nginx:
-    image: nginx:lastet
+    image: tereshchenkovali/yamdb_final:laste
 
     ports:
       - "80:80"
