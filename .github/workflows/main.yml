@@ -53,9 +53,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        PORT: 5000
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_final
           sudo docker stop $(sudo docker ps -a -q)
