@@ -11,14 +11,13 @@ from rest_framework_simplejwt.tokens import AccessToken
 
 from .filters import TitleFilter
 from .models import Category, Genre, Review, Title, User
-from .permission import (
-    IsAdmin, IsAdminOrReadOnly, IsOwnerAdminModeratorOrReadOnly,
-)
-from .serializers import (
-    CategorySerializer, CommentSerializer, ConfirmationCodeSerializer,
-    EmailSerializer, GenreSerializer, ReviewSerializer, TitleCreateSerializer,
-    TitleSerializer, UserSerializer,
-)
+from .permission import (IsAdmin, IsAdminOrReadOnly,
+                         IsOwnerAdminModeratorOrReadOnly)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          ConfirmationCodeSerializer, EmailSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          TitleCreateSerializer, TitleSerializer,
+                          UserSerializer)
 
 
 class UserViewSet(viewsets.ModelViewSet):
