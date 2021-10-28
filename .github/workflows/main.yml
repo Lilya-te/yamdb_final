@@ -68,4 +68,4 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_final
+          sudo docker pull tereshchenkovali/yamdb_final
