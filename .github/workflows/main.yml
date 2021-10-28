@@ -51,8 +51,8 @@ jobs:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }}
+        host: 130.193.48.81
+        username: liliia
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFQZU6gd14oaLc6xWoUVNCZTbeYK+kPeoieB3Z5OSsx6MicvzEmp+GllnEqvGsSBl0+Q9pu3+4T20/m4plKhVwf54aQU3uaFIjmKiCQ5oOxf9Qh0ll0vC5kpG3TM2h5RmELRH6EisqVa1lGZeU9W3ZK//RWcux/HbqfIRtX8RJIKCq6+7READ2dKDYn5l7kyy/FF2WYkWRnlYIWHlbszFm4U0GJNpM0c65ZHt12V4cL4vkqN8ZYrKaPeA/aX8g0Oy3QwjS+6qezLUUX6iv64lpRtuQNm0Ww8hbAD3DQ6HjJIcOJvfhSdXyJuqqKBvqTVPCntvoOqoEsU0p8wxz0pXyZrwrrbfVd8/wFhvfXI1liNrGRUliOhgRdCuVWwKGCuIl+Xddm6AYtYqwcBRma+JwQRTZOlYmJl96vPBJsp3HQMOd7ls5LEMmlEsiOLQACTtGYYJoLOOAmwOP8jdyZ57OX1RmunVFdRZCDMvO9i6ZDP9Jh5bYkEP1vm4yNjxJXaU= lilya@DESKTOP-TGA2OL0
         script: |
           ls
