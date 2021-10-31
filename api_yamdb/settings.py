@@ -130,7 +130,7 @@ print(STATIC_ROOT)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'), 'var/html/static/')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'), '/var/html/static/')
 print('STATICFILES_DIRS')
 print(STATICFILES_DIRS)
 
