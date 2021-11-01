@@ -62,6 +62,7 @@ jobs:
           echo sudo docker stop $(sudo docker ps -a -q)
           sudo docker stop $(sudo docker ps -a -q)
           #sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/yamdb_final
+          cd ..
           sudo docker-compose up
 
 
