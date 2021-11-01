@@ -61,7 +61,7 @@ jobs:
           #остановка всех контейнеров
           echo sudo docker stop $(sudo docker ps -a -q)
           sudo docker stop $(sudo docker ps -a -q)
-          echo sudo docker run /yamdb_final 
+          echo sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/yamdb_final 
           sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/yamdb_final 
 
 
