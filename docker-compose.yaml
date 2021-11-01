@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.8.5'
 
 services:
   db:
@@ -8,11 +8,13 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
       - ./.env
+
+
   web:
     image: tereshchenkovali/yamdb_final:latest
     build: .
-    restart: always
-    command: gunicorn yamdb_final.wsgi:application --bind 0.0.0.0:8000
+    # restart: always
+    command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
     ports:
       - "8000:8000" 
     volumes:
