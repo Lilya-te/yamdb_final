@@ -60,7 +60,7 @@ jobs:
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
           # sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/yamdb_final
-          sudo docker-compose -f docker-compose.yaml up -d
+          sudo docker-compose up --rm -d -p 5000:5000
 
   send_message:
     runs-on: ubuntu-latest
