@@ -62,9 +62,7 @@ jobs:
           echo sudo docker stop $(sudo docker ps -a -q)
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/yamdb_final 
-          sudo docker run postgres
-          sudo docker run nginx
-          sudo docker run python
+          sudo docker run --rm -d nginx
 
 
   send_message:
