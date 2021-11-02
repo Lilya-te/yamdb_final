@@ -61,9 +61,7 @@ jobs:
           # остановка всех контейнеров
           echo sudo docker stop $(sudo docker ps -a -q)
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker-compose rm web
-          cp -f infra/* .
-          sudo docker-compose -f docker-compose.yaml up -d
+          sudo docker run --rm -d
 
 
   send_message:
