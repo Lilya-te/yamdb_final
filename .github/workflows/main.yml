@@ -61,7 +61,9 @@ jobs:
           # остановка всех контейнеров
           echo sudo docker stop $(sudo docker ps -a -q)
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d
+          sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/yamdb_final 
+          sudo docker run --rm -d nginx:1.19.3
+          sudo docker run --rm -d postgres:12.4
 
 
   send_message:
