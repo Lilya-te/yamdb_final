@@ -58,7 +58,9 @@ jobs:
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_final:latest
           pwd
           pwd
-          cp -f ../docker-compose.yml .
+          cd yamdb_final
+          pwd
+          pwd
           sudo docker-compose stop
           sudo docker-compose rm web
           rm -f .env
